@@ -11,15 +11,6 @@ config_s2i
 echo "---> Installing application source"
 cp -af /tmp/src/. ./
 
-cp -Rf /tmp/src/. ./
-
-cp /tmp/src/index.html /var/www/html/
- 
-DATE=data "+%b %d, %Y"
-echo "----> Create infos web page"
-echo "Welcome to my info web page $DATA" >> ./infos.html
-echo "Hello World" >> ./infos.html
-
 # Fix source directory permissions
 fix-permissions ./
 
