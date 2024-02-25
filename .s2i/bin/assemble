@@ -14,7 +14,7 @@ cp -af /tmp/src/. ./
 cp -Rf /tmp/src/*.html ./
 
 echo "Lets start build infos.html file"
-DATE= data "+%F"
+DATE= date "+%F"
 echo "$DATA" >> ./infos.html
 echo "Astra inclinant, sed non obligant" >> ./infos.html
 
