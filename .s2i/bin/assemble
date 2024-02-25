@@ -15,8 +15,13 @@ cp -Rf /tmp/src/*.html ./
 
 echo "Lets start build infos.html file"
 
-DATE= date "+%F"
-echo "print of date $DATE" >> ./infos.html
+DATE=date "+%b %d, %Y @ %H:%M %p"
+echo "---> Creating info page"
+echo "Page built on $DATE" >> ./info.html
+echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
+
+DATA= date "+%F"
+echo "print of date $DATA" >> ./infos.html
 echo "Astra inclinant, sed non obligant" >> ./infos.html
 
 # Fix source directory permissions
