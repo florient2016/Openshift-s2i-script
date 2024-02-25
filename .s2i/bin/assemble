@@ -15,7 +15,7 @@ cp -Rf /tmp/src/*.html ./
 
 echo "Lets start build infos.html file"
 DATE= date "+%F"
-echo "$DATA" >> ./infos.html
+echo "$DATE" >> ./infos.html
 echo "Astra inclinant, sed non obligant" >> ./infos.html
 
 # Fix source directory permissions
