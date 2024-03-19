@@ -16,13 +16,9 @@ cp -Rf /tmp/src/*.html ./
 echo "Lets start build infos.html file"
 
 DATE= date "+%b %d, %Y @ %H:%M %p"
-echo "---> Creating info page"
-echo "Page built on $DATE" >> ./info.html
-echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
-
-DATA= date "+%F"
-echo "print of date $DATA" >> ./infos.html
-echo "Astra inclinant, sed non obligant" >> ./infos.html
+echo "---> Creating infos page"
+echo "EC INTELLIGENTE, is a sponsoring this meeting going on: $(date "+%b %d, %Y @ %H:%M %p")" >> ./infos.html
+echo "Feel free to reach us on our social media network $HTTPD_VERSION" >> ./infos.html
 
 # Fix source directory permissions
 fix-permissions ./
