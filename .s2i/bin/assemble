@@ -17,8 +17,8 @@ echo "Lets start build infos.html file"
 
 DATE= date "+%b %d, %Y @ %H:%M %p"
 echo "---> Creating infos page"
-echo "EC INTELLIGENTE, is a sponsoring this meeting going on: $(date "+%b %d, %Y @ %H:%M %p")" >> ./infos.html
-echo "Feel free to reach us on our social media network $HTTPD_VERSION" >> ./infos.html
+echo "<h1>EC INTELLIGENTE, is a sponsoring this meeting going on: $(date "+%b %d, %Y @ %H:%M %p")</h1>" >> ./infos.html
+echo "<h1>Feel free to reach us on our social media network $HTTPD_VERSION </h1>" >> ./infos.html
 
 # Fix source directory permissions
 fix-permissions ./
